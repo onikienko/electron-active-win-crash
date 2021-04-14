@@ -1,20 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "electron-active-win-crash",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Demonstrates bug with Electron v12.x.x, active-win v7.x.x on the Windows 10",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "postinstall": "electron-rebuild"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^12.0.4",
