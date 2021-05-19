@@ -32,11 +32,11 @@ app.whenReady().then(() => {
     if (BrowserWindow.getAllWindows().length === 0) createWindow()
   })
 
-  setInterval(() => {
-    activeWindow()
-      .then(res => console.log(res))
-      .catch(error => console.log('caught error', error))
-  }, 5000)
+  console.log('Getting window info for the first time:');
+  console.log(activeWindow.sync());
+
+  console.log('Getting window info for the same window second time:');
+  console.log(activeWindow.sync());
 })
 
 // Quit when all windows are closed, except on macOS. There, it's common
